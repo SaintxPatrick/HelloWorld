@@ -1,12 +1,20 @@
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
+//Object declared below
+let person = {
+  name: 'Mosh',
+  age: 30
+};
 
-if (environment.production) {
-  enableProdMode();
+person.name = 'John';
+
+person["name"] = "Mary";
+
+console.log(person);
+console.log(person.name);
+console.log(person['name']);
+
+function greet(name: any) {
+  console.log('Hello' + name);
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+greet('person.name');

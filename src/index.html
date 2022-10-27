@@ -8,6 +8,23 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+  <script ##Wont work since can not use local files. ##src=##"C:\Users\patri\IdeaProjects\myPractice\myAttempt\src\practice.ts" type="module"></script>
+  <script>
+const item = [Saab, "Volvo", "BMW"];
+const len = items.length;
+const itemsCopy = [];
+let i;
+
+for (i = 0; i < len; i += 1) {
+  itemsCopy[i] = items[i];
+}
+
+// good
+const itemsCopy = [...items];
+
+  </script>
   <app-root></app-root>
 </body>
 </html>
+
+
